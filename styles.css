@@ -1,5 +1,5 @@
 body {
-  text-align: center;
+  /* text-align: center; */
   background-color: #011F3F;
 }
 
@@ -9,12 +9,28 @@ body {
   margin:  5%;
   color: #FEF2BF;
 }
+.box{
+  position: absolute;
+  left: 20%;
+
+}
 
 .container {
-  display: block;
-  width: 50%;
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;  
+  width: fit-content;
+  flex-wrap: wrap;
 
+}
+div#game-rule.container{
+  position: relative;
+  left: 10%;
+  width: 43%;
+}
+.row{
+  display: flex;
+  flex-direction: column;
 }
 .btn {
   margin: 25px;

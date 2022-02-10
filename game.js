@@ -35,7 +35,7 @@ function checkAnswer(currentLevel){
   } else{
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over, Press Any key To Restart");
+    $("#level-title").text("Game Over");
 
     setTimeout(function() {
       $("body").removeClass("game-over");
