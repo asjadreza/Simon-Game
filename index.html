@@ -3,16 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Simon</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Creepster&family=Montserrat:wght@200&family=Shizuru&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <h1 id="level-title">Press A Key to Start</h1>
+  <h1 id="level-title">Simon Game, Click Start</h1>
   <div class="box">
     <div class="container">
-      <div class="row">
+      <div class="row" id="col1">
 
         <div type="button" id="green" class="btn green">
 
@@ -23,7 +28,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" id="col2">
 
         <div type="button" id="yellow" class="btn yellow">
 
@@ -34,16 +39,24 @@
 
       </div>
       <div class="container" id="game-rule">
-        <h1 id="">How To Play This Game</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nulla veniam repellendus eius, magnam rem
-          quibusdam maiores nam atque totam velit saepe numquam. Sint at sit odio officia, ea beatae corrupti voluptates
-          laudantium ducimus illo. Veritatis molestias, sit enim, veniam quasi asperiores inventore aspernatur eos
-          beatae repellat ullam hic quidem?</p>
-          <div>
-            <button class="btn2">Start Game</button>
-          </div>
+        <h2 id="">How To Play This Game</h2>
+        <p>Simon is an electronic game of memory skill invented by Ralph H. Baer and Howard J. Morrison, working for toy
+          design firm Marvin Glass and Associates, with software programming by Lenny Cope. The device creates a series
+          of tones and lights and requires a user to repeat the sequence. Now this game is in front of you, you can
+          start buy clicking the start button below with level 0, once you started the game it will produce different
+          sound for different
+          color and will blink at the same time. You have to see which button would blink, if you see it you have to
+          click that colored
+          button. If you do it correct you are increment to level 1. Again after this the button will blink and you have
+          to see it and if see it
+          you have to click in order of previous colored button you clicked and the colored button blinked in level 1.
+          And have to continue
+          like this and your level gets increases.</p>
+        <div>
+          <button class="btn2">Start Game</button>
+        </div>
       </div>
-      
+
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
