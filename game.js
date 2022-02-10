@@ -7,7 +7,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function() {
+$(".btn2").click(function(){
   if(!started){
     $("#level-title").text("Level" + level);
     nextSequence();
@@ -35,7 +35,7 @@ function checkAnswer(currentLevel){
   } else{
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over");
+    $("#level-title").text("Game Over, play again");
 
     setTimeout(function() {
       $("body").removeClass("game-over");
@@ -45,8 +45,9 @@ function checkAnswer(currentLevel){
   }
 }
 
-function nextSequence() {  
+function nextSequence() { 
   userClickedPattern = [];  
+  level=0 
   $("#level-title").text("Level " + level);
   level++
   var randomNumber = Math.floor(Math.random() * 4);
